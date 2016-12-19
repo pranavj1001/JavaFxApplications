@@ -44,7 +44,7 @@ public class Controller {
         tfEmailAddress.setText(null);
         tfContactNumber.setText(null);
         tfTotalMarks.setText(null);
-        
+
     }
 
     public void saveTheData(){
