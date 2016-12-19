@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import jdk.nashorn.internal.objects.NativeUint8Array;
 
 public class Controller {
 
@@ -33,6 +34,12 @@ public class Controller {
                              tfEmailAddress.getText()+"\t"+
                              tfContactNumber.getText()+"\t"+
                              tfTotalMarks.getText()+"\n");
+        tfID.setText(null);
+        tfFirstName.setText(null);
+        tfLastName.setText(null);
+        tfEmailAddress.setText(null);
+        tfContactNumber.setText(null);
+        tfTotalMarks.setText(null);
     }
 
 }
