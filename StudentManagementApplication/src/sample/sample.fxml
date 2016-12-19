@@ -29,7 +29,7 @@
             <TextField fx:id="tfFirstName" layoutX="170.0" layoutY="75.0" prefHeight="25.0" prefWidth="311.0" />
             <TextField fx:id="tfLastName" layoutX="170.0" layoutY="104.0" prefHeight="25.0" prefWidth="311.0" />
             <TextField fx:id="tfEmailAddress" layoutX="170.0" layoutY="133.0" prefHeight="25.0" prefWidth="311.0" />
-            <TextField fx:id="tfContact" layoutX="170.0" layoutY="161.0" prefHeight="25.0" prefWidth="311.0" />
+            <TextField fx:id="tfContactNumber" layoutX="170.0" layoutY="161.0" prefHeight="25.0" prefWidth="311.0" />
             <TextField fx:id="tfTotalMarks" layoutX="170.0" layoutY="190.0" prefHeight="25.0" prefWidth="311.0" />
             <TextArea fx:id="taDisplay" layoutX="22.0" layoutY="238.0" prefHeight="200.0" prefWidth="457.0" />
             <Button fx:id="addButton" layoutX="441.0" layoutY="448.0" mnemonicParsing="false" onAction="#addTheData" text="Add" />
