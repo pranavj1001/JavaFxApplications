@@ -11,7 +11,7 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
 ##Contents
 
-**1)Student Management Application** - This application simply helps to add all the details of students in a format. After entering the data, the user can save the data. The application will save the data in the form of a text file.  
+* **Student Management Application** - This application simply helps to add all the details of students in a format. After entering the data, the user can save the data. The application will save the data in the form of a text file.  
 
 
 Acronym used
