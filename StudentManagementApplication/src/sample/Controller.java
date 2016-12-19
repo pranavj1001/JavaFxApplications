@@ -23,6 +23,9 @@ public class Controller {
     //the setOnAction method for the button
     //ie whenever the button is clicked this method runs
     public void addTheData(){
+        taDisplay.setEditable(false);
+        taDisplay.setMouseTransparent(true);
+        taDisplay.setFocusTraversable(false);
         taDisplay.appendText(tfID.getText()+"\t"+
                              tfFirstName.getText()+"\t"+
                              tfLastName.getText()+"\t"+
