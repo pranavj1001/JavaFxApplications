@@ -30,8 +30,14 @@
             <TextField fx:id="tfEmailAddress" layoutX="170.0" layoutY="133.0" prefHeight="25.0" prefWidth="311.0" />
             <TextField fx:id="tfContactNumber" layoutX="170.0" layoutY="161.0" prefHeight="25.0" prefWidth="311.0" />
             <TextField fx:id="tfTotalMarks" layoutX="170.0" layoutY="190.0" prefHeight="25.0" prefWidth="311.0" />
-            <TextArea fx:id="taDisplay" layoutX="22.0" layoutY="238.0" prefHeight="200.0" prefWidth="457.0" />
-            <Button fx:id="addButton" layoutX="441.0" layoutY="448.0" mnemonicParsing="false" onAction="#addTheData" text="Add" />
+            <TextArea fx:id="taDisplay" layoutX="22.0" layoutY="248.0" prefHeight="200.0" prefWidth="457.0" />
+            <Button fx:id="addButton" layoutX="441.0" layoutY="457.0" mnemonicParsing="false" onAction="#addTheData" text="Add" />
+            <Button fx:id="saveButton" layoutX="387.0" layoutY="457.0" mnemonicParsing="false" onAction="#saveTheData" text="Save" />
+            <Label layoutX="22.0" layoutY="231.0" text="ID" />
+            <Label layoutX="52.0" layoutY="231.0" text="Name" />
+            <Label layoutX="142.0" layoutY="231.0" text="Email Address" />
+            <Label layoutX="245.0" layoutY="231.0" text="Contact Number" />
+            <Label layoutX="351.0" layoutY="231.0" text="Total Marks" />
          </children>
       </AnchorPane>
    </children>

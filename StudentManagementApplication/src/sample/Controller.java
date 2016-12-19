@@ -1,7 +1,6 @@
 package sample;
 
 import javafx.fxml.FXML;
-import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -29,19 +28,16 @@ public class Controller {
     //set up the variables for the TextArea
     @FXML private TextArea taDisplay;
 
-    Group root = new Group();
-
     //the setOnAction method for the button
     //ie whenever the button is clicked this method runs
     public void addTheData(){
+        taDisplay.setText("ID \t Name \t\t Email Address \t Contact Number \t Total Marks \n");
         taDisplay.setEditable(false);
-        taDisplay.setMouseTransparent(true);
-        taDisplay.setFocusTraversable(false);
         taDisplay.appendText(tfID.getText()+"\t"+
-                             tfFirstName.getText()+"\t"+
+                             tfFirstName.getText()+" "+
                              tfLastName.getText()+"\t"+
-                             tfEmailAddress.getText()+"\t"+
-                             tfContactNumber.getText()+"\t"+
+                             tfEmailAddress.getText()+"\t\t"+
+                             tfContactNumber.getText()+"\t\t"+
                              tfTotalMarks.getText()+"\n");
         tfID.setText(null);
         tfFirstName.setText(null);
