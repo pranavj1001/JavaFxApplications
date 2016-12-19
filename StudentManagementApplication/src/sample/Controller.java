@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -7,18 +8,18 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     //set up the variables for the TextFields
-    public TextField tfID;
-    public TextField tfFirstName;
-    public TextField tfLastName;
-    public TextField tfEmailAddress;
-    public TextField tfContactNumber;
-    public TextField tfTotalMarks;
+    @FXML private TextField tfID;
+    @FXML private TextField tfFirstName;
+    @FXML private TextField tfLastName;
+    @FXML private TextField tfEmailAddress;
+    @FXML private TextField tfContactNumber;
+    @FXML private TextField tfTotalMarks;
 
     //set up the variables for the Button
-    public Button addButton;
+    @FXML private Button addButton;
 
     //set up the variables for the TextArea
-    public TextArea taDisplay;
+    @FXML private TextArea taDisplay;
 
     //the setOnAction method for the button
     //ie whenever the button is clicked this method runs
