@@ -31,7 +31,6 @@ public class Controller {
     //the setOnAction method for the button
     //ie whenever the button is clicked this method runs
     public void addTheData(){
-        taDisplay.setText("ID \t Name \t\t Email Address \t Contact Number \t Total Marks \n");
         taDisplay.setEditable(false);
         taDisplay.appendText(tfID.getText()+"\t"+
                              tfFirstName.getText()+" "+
@@ -45,7 +44,10 @@ public class Controller {
         tfEmailAddress.setText(null);
         tfContactNumber.setText(null);
         tfTotalMarks.setText(null);
+        
+    }
 
+    public void saveTheData(){
         FileChooser fileChooser = new FileChooser();
 
         //Set extension filter
@@ -59,7 +61,6 @@ public class Controller {
         if(file != null){
             SaveFile(taDisplay.getText(), file);
         }
-
     }
 
     private void SaveFile(String content, File file){
