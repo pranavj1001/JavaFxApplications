@@ -3,8 +3,18 @@ package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Controller {
+
+    String remark = "";
+    String bmiResult = "";
 
     //set up the variables of the TextFields
     @FXML private TextField tfHeight;
@@ -19,8 +29,6 @@ public class Controller {
         double height;
         double weight;
         double bmi;
-        String remark;
-        String bmiResult = "";
 
         height = Double.parseDouble(tfHeight.getText());
         weight = Double.parseDouble(tfWeight.getText());
@@ -69,5 +77,37 @@ public class Controller {
 
     }
 
+    @FXML private void saveTheBMI(){
+
+        String data = bmiResult + " \n" + remark;
+
+        FileChooser fileChooser = new FileChooser();
+
+        //Set extension filter
+        FileChooser.ExtensionFilter extFilter =
+                new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+
+        //Show save file dialog
+        File file = fileChooser.showSaveDialog(Main.stage);
+
+        if(file != null){
+            SaveFile(data, file);
+        }
+    }
+
+    private void SaveFile(String content, File file){
+        try {
+            FileWriter fileWriter;
+
+            fileWriter = new FileWriter(file);
+            fileWriter.write(content);
+            fileWriter.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Controller.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
 
 }
