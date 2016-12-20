@@ -42,6 +42,11 @@
                </font>
             </Label>
             <Button layoutX="308.0" layoutY="432.0" mnemonicParsing="false" onAction="#saveTheBMI" text="Save Results" />
+            <Label fx:id="lError" layoutX="104.0" layoutY="187.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
