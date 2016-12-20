@@ -13,7 +13,7 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
 * **Student Management Application** - This application simply helps to add all the details of students in a format. After entering the data, the user can save the data. The application will save the data in the form of a text file.
 
-* **BMI Application** - (WIP)
+* **BMI Application** - This application simply calculates the BMI by taking the inputs from the user. The application also gives out a remark based on user's BMI. If the user wishes to save the data then he/she can do so. The application will save the data in the form of a text file alongwith the current date and time.
 
 
 Acronym used
