@@ -20,11 +20,13 @@ public class Controller {
         double weight;
         double bmi;
         String remark;
+        String bmiResult = "";
 
         height = Double.parseDouble(tfHeight.getText());
         weight = Double.parseDouble(tfWeight.getText());
 
         bmi = weight / (height * height);
+        bmiResult = String.valueOf(bmi);
 
         if(bmi <= 15){
             remark = "You are very severely underweight. Please consult a doctor.";
@@ -62,7 +64,7 @@ public class Controller {
             remark = "There's an error in the system. Please give us time to fix it";
         }
 
-        lBMI.setText(String.valueOf(bmi));
+        lBMI.setText(bmiResult);
         lRemark.setText(remark);
 
     }
