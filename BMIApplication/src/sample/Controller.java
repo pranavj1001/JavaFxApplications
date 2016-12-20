@@ -8,6 +8,9 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -79,7 +82,11 @@ public class Controller {
 
     @FXML private void saveTheBMI(){
 
-        String data = bmiResult + " \n" + remark;
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        //get current date time with Date()
+        Date date = new Date();
+
+        String data = bmiResult + "\n" + remark + "\n" + dateFormat.format(date);
 
         FileChooser fileChooser = new FileChooser();
 
