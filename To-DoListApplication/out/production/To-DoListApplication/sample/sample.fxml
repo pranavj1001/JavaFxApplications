@@ -51,7 +51,6 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField />
             <TextField fx:id="tfTime" layoutX="157.0" layoutY="91.0" prefHeight="25.0" prefWidth="296.0" />
             <Label layoutX="42.0" layoutY="128.0" text="Priority">
                <font>
