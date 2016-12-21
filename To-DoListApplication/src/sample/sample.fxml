@@ -1,8 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <DatePicker layoutX="155.0" layoutY="56.0" prefHeight="25.0" prefWidth="296.0" />
+            <Label layoutX="42.0" layoutY="57.0" prefHeight="17.0" prefWidth="112.0" text="Choose the Date">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="157.0" layoutY="162.0" prefHeight="71.0" prefWidth="296.0" />
+            <Label layoutX="42.0" layoutY="162.0" text="Enter the Task">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="388.0" layoutY="245.0" mnemonicParsing="false" text="Add Task" />
+            <TextArea layoutX="44.0" layoutY="284.0" prefHeight="152.0" prefWidth="411.0" />
+            <Button layoutX="368.0" layoutY="450.0" mnemonicParsing="false" text="Save The List" />
+            <Button layoutX="312.0" layoutY="245.0" mnemonicParsing="false" text="Clear Task" />
+            <Button layoutX="298.0" layoutY="450.0" mnemonicParsing="false" text="Clear List" />
+            <Label layoutX="42.0" layoutY="246.0" text="Preview">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="13.0" text="Enter the details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="93.0" text="Select the Time">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField />
+            <TextField layoutX="157.0" layoutY="91.0" prefHeight="25.0" prefWidth="296.0" />
+            <Label layoutX="42.0" layoutY="128.0" text="Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="156.0" layoutY="130.0" mnemonicParsing="false" text="Very High" />
+            <RadioButton layoutX="235.0" layoutY="130.0" mnemonicParsing="false" text="High" />
+            <RadioButton layoutX="287.0" layoutY="130.0" mnemonicParsing="false" text="Mid" />
+            <RadioButton layoutX="338.0" layoutY="130.0" mnemonicParsing="false" text="Low" />
+            <RadioButton layoutX="385.0" layoutY="130.0" mnemonicParsing="false" text="Very Low" />
+            <Button layoutX="255.0" layoutY="450.0" mnemonicParsing="false" text="Sort" />
+            <Label fx:id="lError" layoutX="44.0" layoutY="454.0" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
 </GridPane>
