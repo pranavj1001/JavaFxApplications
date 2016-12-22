@@ -1,0 +1,12 @@
+2016-12-23	8:00 PM	Very High		trail
+
+2016-12-23	8:00 PM	High		trail
+
+2016-12-23	8:00 PM	Mid		trail
+
+2016-12-23	8:00 PM	Low		trail
+2016-12-23	8:00 PM	Low		trail
+2016-12-23	8:00 PM	Low		trail
+
+2016-12-23	8:00 PM	Very Low		trail
+
