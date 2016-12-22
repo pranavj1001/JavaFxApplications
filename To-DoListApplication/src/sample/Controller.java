@@ -75,6 +75,10 @@ public class Controller {
 
     @FXML private void clearTask(){
 
+        datePicker.setValue(null);
+        tfTime.setText("");
+        taTask.setText("");
+
     }
 
     @FXML private void saveList(){
