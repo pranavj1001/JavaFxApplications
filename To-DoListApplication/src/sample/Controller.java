@@ -53,7 +53,7 @@ public class Controller {
         }else if (radioButton5.isSelected()){
             priorityRadioButton = radioButton5.getText();
         }
-        steps[1] = true;
+        steps[2] = true;
     }
 
     @FXML private void addTask(){
@@ -64,7 +64,7 @@ public class Controller {
 
             task = datePicker.getValue().toString() + "\t" +
                    tfTime.getText() + "\t" +
-                   priorityRadioButton + "\t" +
+                   priorityRadioButton + "\t\t" +
                    taTask.getText() + "\n";
 
             taPreview.appendText(task);
@@ -121,12 +121,12 @@ public class Controller {
 
     private void setSteps(){
 
-        if(!datePicker.getValue().toString().isEmpty())
+        if(datePicker.getValue() != null)
             steps[0] = true;
         if(!tfTime.getText().isEmpty())
             steps[1] = true;
         if(!taTask.getText().isEmpty())
-            steps[2] = true;
+            steps[3] = true;
 
     }
 
