@@ -59,16 +59,16 @@ public class Controller {
             priorityRadioButton = radioButton1.getText();
             priorityNumber = 1;
         }else if (radioButton2.isSelected()){
-            priorityRadioButton = radioButton2.getText();
+            priorityRadioButton = radioButton2.getText() + "     ";
             priorityNumber = 2;
         }else if(radioButton3.isSelected()){
-            priorityRadioButton = radioButton3.getText();
+            priorityRadioButton = radioButton3.getText() + "      ";
             priorityNumber = 3;
         }else if(radioButton4.isSelected()){
-            priorityRadioButton = radioButton4.getText();
+            priorityRadioButton = radioButton4.getText() + "      ";
             priorityNumber = 4;
         }else if (radioButton5.isSelected()){
-            priorityRadioButton = radioButton5.getText();
+            priorityRadioButton = radioButton5.getText() + " ";
             priorityNumber = 5;
         }
         steps[2] = true;
@@ -157,18 +157,19 @@ public class Controller {
 
         taPreview.setText("");
 
+        taPreview.appendText("// Very High\n");
         for(String x : priorityList1)
             taPreview.appendText(x);
-        taPreview.appendText("\n");
+        taPreview.appendText("\n// High");
         for(String x : priorityList2)
             taPreview.appendText(x);
-        taPreview.appendText("\n");
+        taPreview.appendText("\n// Mid");
         for(String x : priorityList3)
             taPreview.appendText(x);
-        taPreview.appendText("\n");
+        taPreview.appendText("\n// Low");
         for(String x : priorityList4)
             taPreview.appendText(x);
-        taPreview.appendText("\n");
+        taPreview.appendText("\n// VeryLow");
         for(String x : priorityList5)
             taPreview.appendText(x);
         taPreview.appendText("\n");
