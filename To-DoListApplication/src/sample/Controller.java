@@ -69,6 +69,8 @@ public class Controller {
 
             taPreview.appendText(task);
 
+            lError.setText("Task Added");
+
         }
 
     }
@@ -85,9 +87,13 @@ public class Controller {
                 steps[i] = true;
         }
 
+        lError.setText("Task was Cleared");
+
     }
 
     @FXML private void saveList(){
+
+        lError.setText("The List was Saved");
 
     }
 
@@ -95,9 +101,13 @@ public class Controller {
 
         taPreview.setText("");
 
+        lError.setText("The List was cleared");
+
     }
 
     @FXML private void sortList(){
+
+        lError.setText("The list was sorted");
 
     }
 
