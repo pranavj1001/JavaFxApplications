@@ -37,9 +37,9 @@ public class Controller {
 
     //set up the variables that we need to run the program;
     private boolean[] steps = {false, false, false, false};
-    String task = "";
-    String preview = "";
-    String priorityRadioButton = "";
+    private String task = "";
+    private String preview = "";
+    private String priorityRadioButton = "";
 
     @FXML private void checkPriority(){
         if(radioButton1.isSelected()){
@@ -58,7 +58,18 @@ public class Controller {
 
     @FXML private void addTask(){
 
-        
+        setSteps();
+
+        if(goAhead()){
+
+            task = datePicker.getValue().toString() + "\t" +
+                   tfTime.getText() + "\t" +
+                   priorityRadioButton + "\t" +
+                   taTask.getText() + "\n";
+
+            taPreview.appendText(task);
+
+        }
 
     }
 
@@ -102,7 +113,6 @@ public class Controller {
                 lError.setText("Please write something for the Task ");
             }else {
                 lError.setText("System Error");
-                return false;
             }
         }
         return false;
