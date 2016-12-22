@@ -5,6 +5,9 @@ import javafx.scene.control.*;
 
 public class Controller {
 
+    //set up the variables of the DatePicker
+    @FXML private DatePicker datePicker;
+
     //set up the variables of the Button
     @FXML private Button bAddTask;
     @FXML private Button bClearTask;
@@ -33,7 +36,7 @@ public class Controller {
     @FXML private ToggleGroup priority;
 
     //set up the variables that we need to run the program;
-    private boolean[] steps = new boolean[5];
+    private boolean[] steps = {false, false, false, false};
     String task = "";
     String preview = "";
     String priorityRadioButton = "";
@@ -50,6 +53,7 @@ public class Controller {
         }else if (radioButton5.isSelected()){
             priorityRadioButton = radioButton5.getText();
         }
+        steps[2] = true;
     }
 
     @FXML private void addTask(){
@@ -69,6 +73,37 @@ public class Controller {
     }
 
     @FXML private void sortList(){
+
+    }
+
+    private boolean goAhead(){
+        boolean check = false;
+        for(int i = 0; i < steps.length; i++){
+            if(steps[i])
+                check = true;
+            else
+                check = false;
+        }
+        if(check){
+            return true;
+        }else {
+            if(!steps[0])
+                lError.setText("Please select the date");
+            else if(!steps[1]){
+                lError.setText("Please select the time");
+            }else if(!steps[2]){
+                lError.setText("Please select the priority");
+            }else if(!steps[3]){
+                lError.setText("Please write something for the Task ");
+            }else {
+                lError.setText("System Error");
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private void setSteps(){
 
     }
 
