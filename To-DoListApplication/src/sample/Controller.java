@@ -2,6 +2,13 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.FileChooser;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Controller {
 
@@ -93,6 +100,20 @@ public class Controller {
 
     @FXML private void saveList(){
 
+        FileChooser fileChooser = new FileChooser();
+
+        //Set extension filter
+        FileChooser.ExtensionFilter extFilter =
+                new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+
+        //Show save file dialog
+        File file = fileChooser.showSaveDialog(Main.stage);
+
+        if(file != null){
+            SaveFile(taPreview.getText(), file);
+        }
+
         lError.setText("The List was Saved");
 
     }
@@ -149,6 +170,20 @@ public class Controller {
             steps[1] = true;
         if(!taTask.getText().isEmpty())
             steps[3] = true;
+
+    }
+
+    private void SaveFile(String content, File file){
+        try {
+            FileWriter fileWriter;
+
+            fileWriter = new FileWriter(file);
+            fileWriter.write(content);
+            fileWriter.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Controller.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
 
     }
 
