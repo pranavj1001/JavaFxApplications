@@ -19,7 +19,7 @@
    <children>
       <AnchorPane prefHeight="500.0" prefWidth="500.0">
          <children>
-            <DatePicker fx:id="datePicker" layoutX="155.0" layoutY="56.0" prefHeight="25.0" prefWidth="296.0" />
+            <DatePicker fx:id="datePicker" editable="false" layoutX="155.0" layoutY="56.0" prefHeight="25.0" prefWidth="296.0" />
             <Label layoutX="42.0" layoutY="57.0" prefHeight="17.0" prefWidth="112.0" text="Choose the Date">
                <font>
                   <Font size="14.0" />

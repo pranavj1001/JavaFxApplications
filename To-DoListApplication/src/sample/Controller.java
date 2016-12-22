@@ -7,6 +7,7 @@ import javafx.stage.FileChooser;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -45,20 +46,31 @@ public class Controller {
     //set up the variables that we need to run the program;
     private boolean[] steps = {false, false, false, false};
     private String task = "";
-    private String preview = "";
+    private ArrayList<String> priorityList1 = new ArrayList<>();
+    private ArrayList<String> priorityList2 = new ArrayList<>();
+    private ArrayList<String> priorityList3 = new ArrayList<>();
+    private ArrayList<String> priorityList4 = new ArrayList<>();
+    private ArrayList<String> priorityList5 = new ArrayList<>();
     private String priorityRadioButton = "";
+    private int priorityNumber = 0;
+    private int count = 0;
 
     @FXML private void checkPriority(){
         if(radioButton1.isSelected()){
             priorityRadioButton = radioButton1.getText();
+            priorityNumber = 1;
         }else if (radioButton2.isSelected()){
             priorityRadioButton = radioButton2.getText();
+            priorityNumber = 2;
         }else if(radioButton3.isSelected()){
             priorityRadioButton = radioButton3.getText();
+            priorityNumber = 3;
         }else if(radioButton4.isSelected()){
             priorityRadioButton = radioButton4.getText();
+            priorityNumber = 4;
         }else if (radioButton5.isSelected()){
             priorityRadioButton = radioButton5.getText();
+            priorityNumber = 5;
         }
         steps[2] = true;
     }
@@ -75,6 +87,19 @@ public class Controller {
                    taTask.getText() + "\n";
 
             taPreview.appendText(task);
+
+            if(priorityNumber == 1)
+                priorityList1.add(task);
+            if(priorityNumber == 2)
+                priorityList2.add(task);
+            if(priorityNumber == 3)
+                priorityList3.add(task);
+            if(priorityNumber == 4)
+                priorityList4.add(task);
+            if(priorityNumber == 5)
+                priorityList5.add(task);
+
+            count++;
 
             lError.setText("Task Added");
 
@@ -121,12 +146,35 @@ public class Controller {
     @FXML private void clearList(){
 
         taPreview.setText("");
+        priorityList1.clear();
+        priorityList2.clear();
+        priorityList3.clear();
+        priorityList4.clear();
+        priorityList5.clear();
 
         lError.setText("The List was cleared");
 
     }
 
     @FXML private void sortList(){
+
+        taPreview.setText("");
+
+        for(String x : priorityList1)
+            taPreview.appendText(x);
+        taPreview.appendText("\n");
+        for(String x : priorityList2)
+            taPreview.appendText(x);
+        taPreview.appendText("\n");
+        for(String x : priorityList3)
+            taPreview.appendText(x);
+        taPreview.appendText("\n");
+        for(String x : priorityList4)
+            taPreview.appendText(x);
+        taPreview.appendText("\n");
+        for(String x : priorityList5)
+            taPreview.appendText(x);
+        taPreview.appendText("\n");
 
         lError.setText("The list was sorted");
 
