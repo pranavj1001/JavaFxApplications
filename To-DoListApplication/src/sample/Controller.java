@@ -53,7 +53,6 @@ public class Controller {
     private ArrayList<String> priorityList5 = new ArrayList<>();
     private String priorityRadioButton = "";
     private int priorityNumber = 0;
-    private int count = 0;
 
     @FXML private void checkPriority(){
         if(radioButton1.isSelected()){
@@ -98,8 +97,6 @@ public class Controller {
                 priorityList4.add(task);
             if(priorityNumber == 5)
                 priorityList5.add(task);
-
-            count++;
 
             lError.setText("Task Added");
 
