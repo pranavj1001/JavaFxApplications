@@ -15,7 +15,7 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
 * **BMI Application** - This application simply calculates the BMI by taking the inputs from the user. The application also gives out a remark based on user's BMI. If the user wishes to save the data then he/she can do so. The application will save the data in the form of a text file alongwith the current date and time.
 
-* **TO-DO List Application** - WIP
+* **TO-DO List Application** - This application takes input from the user about the task and its details ie Date, Time, Priority. The user can add the task to the list which also acts as a Preview of all the progress made in the session. The user then can save the list which will be stored in the form of a text file. The user can also select the option to sort the list. The application also has various other smart features which make the UI experience pleasant.  
 
 
 Acronym used
