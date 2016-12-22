@@ -79,6 +79,12 @@ public class Controller {
         tfTime.setText("");
         taTask.setText("");
 
+        for(int i = 0; i < steps.length; i++){
+            steps[i] = false;
+            if(i == 2)
+                steps[i] = true;
+        }
+
     }
 
     @FXML private void saveList(){
@@ -86,6 +92,8 @@ public class Controller {
     }
 
     @FXML private void clearList(){
+
+        taPreview.setText("");
 
     }
 
