@@ -57,11 +57,14 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <RadioButton fx:id="radioButton1" layoutX="156.0" layoutY="130.0" mnemonicParsing="false" text="Very High" />
-            <RadioButton fx:id="radioButton2" layoutX="235.0" layoutY="130.0" mnemonicParsing="false" text="High" />
-            <RadioButton fx:id="radioButton3" layoutX="287.0" layoutY="130.0" mnemonicParsing="false" text="Mid" />
-            <RadioButton fx:id="radioButton4" layoutX="338.0" layoutY="130.0" mnemonicParsing="false" text="Low" />
-            <RadioButton fx:id="radioButton5" layoutX="385.0" layoutY="130.0" mnemonicParsing="false" text="Very Low" />
+            <RadioButton fx:id="radioButton1" layoutX="156.0" layoutY="130.0" mnemonicParsing="false" text="Very High">
+               <toggleGroup>
+                  <ToggleGroup fx:id="priority" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="radioButton2" layoutX="235.0" layoutY="130.0" mnemonicParsing="false" text="High" toggleGroup="$priority" />
+            <RadioButton fx:id="radioButton3" layoutX="287.0" layoutY="130.0" mnemonicParsing="false" text="Mid" toggleGroup="$priority" />
+            <RadioButton fx:id="radioButton4" layoutX="338.0" layoutY="130.0" mnemonicParsing="false" text="Low" toggleGroup="$priority" />
+            <RadioButton fx:id="radioButton5" layoutX="385.0" layoutY="130.0" mnemonicParsing="false" text="Very Low" toggleGroup="$priority" />
             <Button fx:id="bSortList" layoutX="259.0" layoutY="450.0" mnemonicParsing="false" onAction="#sortList" text="Sort List" />
             <Label fx:id="lError" layoutX="44.0" layoutY="454.0" wrapText="true" />
          </children>
