@@ -1,7 +1,5 @@
 package sample;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -38,6 +36,21 @@ public class Controller {
     private boolean[] steps = new boolean[5];
     String task = "";
     String preview = "";
+    String priorityRadioButton = "";
+
+    @FXML private void checkPriority(){
+        if(radioButton1.isSelected()){
+            priorityRadioButton = radioButton1.getText();
+        }else if (radioButton2.isSelected()){
+            priorityRadioButton = radioButton2.getText();
+        }else if(radioButton3.isSelected()){
+            priorityRadioButton = radioButton3.getText();
+        }else if(radioButton4.isSelected()){
+            priorityRadioButton = radioButton4.getText();
+        }else if (radioButton5.isSelected()){
+            priorityRadioButton = radioButton5.getText();
+        }
+    }
 
     @FXML private void addTask(){
 
