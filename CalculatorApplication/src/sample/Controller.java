@@ -14,6 +14,7 @@ public class Controller {
     private double number = 0;
     private String operator = "";
     private boolean start = true;
+    private int pn = 1;
     private Model model = new Model();
 
     @FXML private void processNumber(ActionEvent actionEvent){
@@ -61,6 +62,22 @@ public class Controller {
         operator = "";
         number = 0;
         screen.setText("");
+
+    }
+
+    @FXML private void positiveOrNegative(){
+
+        String number1 = screen.getText();
+
+        if(number1.startsWith("+")) {
+            number1 = number1.replace("+", "-");
+        }else if(number1.startsWith("-")) {
+            number1 = number1.replace("-", "+");
+        }else{
+            number1 = "-" + number1;
+        }
+
+        screen.setText(number1);
 
     }
 

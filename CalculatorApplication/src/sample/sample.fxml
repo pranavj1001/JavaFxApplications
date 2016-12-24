@@ -74,7 +74,7 @@
              </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+/-" />
+                  <Button mnemonicParsing="false" onAction="#positiveOrNegative" prefHeight="50.0" prefWidth="50.0" text="+/-" />
                   <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="50.0" prefWidth="50.0" text="0" />
                   <Button mnemonicParsing="false" onAction="#processNumber" prefHeight="50.0" prefWidth="50.0" text="." />
                   <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="50.0" prefWidth="50.0" text="+" />
