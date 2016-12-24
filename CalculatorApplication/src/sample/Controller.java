@@ -14,6 +14,7 @@ public class Controller {
     private double number = 0;
     private String operator = "";
     private boolean start = true;
+    Model model = new Model();
 
     @FXML private void processNumber(ActionEvent actionEvent){
 
@@ -27,13 +28,33 @@ public class Controller {
 
     }
 
-    @FXML private void processOperator(){
+    @FXML private void processOperator(ActionEvent actionEvent){
+
+        String value  = ((Button) actionEvent.getSource()).getText();
+
+        if(!"=".equals(value)){
+            if(!operator.isEmpty())
+                return;
+
+            operator = value;
+            number = Double.parseDouble(screen.getText());
+            screen.setText("");
+
+        }else{
+            if(operator.isEmpty())
+                return;
+
+            screen.setText(String.valueOf(model.calculate(number, Double.parseDouble(screen.getText()), operator)));
+
+            operator = "";
+            start = true;
+
+        }
 
     }
 
-    @FXML private void calculateAnswer(){
+    @FXML private void clearText(){
 
     }
-
 
 }

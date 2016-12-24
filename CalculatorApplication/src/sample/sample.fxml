@@ -89,7 +89,7 @@
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
                <children>
                   <Button mnemonicParsing="false" onAction="#clearText" prefHeight="50.0" prefWidth="50.0" text="CE" />
-                  <Button mnemonicParsing="false" onAction="#calculateAnswer" prefHeight="50.0" prefWidth="110.0" text="=" />
+                  <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="50.0" prefWidth="110.0" text="=" />
                   <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="50.0" prefWidth="50.0" text="-" />
                </children>
                <opaqueInsets>
