@@ -58,6 +58,11 @@ public class Controller {
 
     @FXML private void clearText(){
 
+        start = true;
+        operator = "";
+        number = 0;
+        screen.setText("");
+
     }
 
 }
