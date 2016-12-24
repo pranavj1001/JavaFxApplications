@@ -37,10 +37,22 @@ public class Model {
             case "1/x":
                 return 1 / n2;
 
+            case "!":
+                return factorial(n2);
+
         }
 
         return 0;
 
+    }
+
+    private double factorial(double number){
+        int i;
+        double fact = 1;
+        for(i = 1;i <= number; i++){
+            fact = fact * i;
+        }
+        return fact;
     }
 
 }
