@@ -44,7 +44,10 @@ public class Controller {
             if(operator.isEmpty())
                 return;
 
-            screen.setText(String.valueOf(model.calculate(number, Double.parseDouble(screen.getText()), operator)));
+            if(!screen.getText().isEmpty())
+                screen.setText(String.valueOf(model.calculate(number, Double.parseDouble(screen.getText()), operator)));
+            else
+                screen.setText(String.valueOf(model.calculate(0.0, number, operator)));
 
             operator = "";
             start = true;

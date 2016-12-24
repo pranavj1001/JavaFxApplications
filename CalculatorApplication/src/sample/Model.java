@@ -28,6 +28,15 @@ public class Model {
                     return (n1 / n2) * 100;
                 return 0;
 
+            case "x^0.5":
+                return Math.sqrt(n2);
+
+            case "x^2":
+                return n2 * n2;
+
+            case "1/x":
+                return 1 / n2;
+
         }
 
         return 0;
