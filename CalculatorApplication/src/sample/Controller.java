@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
 public class Controller {
@@ -15,6 +16,14 @@ public class Controller {
     private boolean start = true;
 
     @FXML private void processNumber(ActionEvent actionEvent){
+
+        if(start){
+            screen.setText("");
+            start = false;
+        }
+
+        String value  = ((Button) actionEvent.getSource()).getText();
+        screen.setText(screen.getText() + value);
 
     }
 
