@@ -14,7 +14,7 @@ public class Controller {
     private double number = 0;
     private String operator = "";
     private boolean start = true;
-    Model model = new Model();
+    private Model model = new Model();
 
     @FXML private void processNumber(ActionEvent actionEvent){
 

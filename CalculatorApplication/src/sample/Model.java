@@ -23,6 +23,11 @@ public class Model {
                     return n1 / n2;
                 return 0;
 
+            case "%":
+                if(n2 != 0)
+                    return (n1 / n2) * 100;
+                return 0;
+
         }
 
         return 0;
