@@ -25,7 +25,6 @@ public class Controller {
 
         String value  = ((Button) actionEvent.getSource()).getText();
         screen.setText(screen.getText() + value);
-
     }
 
     @FXML private void processOperator(ActionEvent actionEvent){
