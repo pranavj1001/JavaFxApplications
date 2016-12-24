@@ -1,8 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="464.0" prefWidth="300.0">
+         <children>
+            <StackPane prefHeight="97.0" prefWidth="300.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7ccd0" height="56.0" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+               <children>
+                   <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="\%" />
+                   <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="x^0.5" />
+                   <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="x^2" />
+                   <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1/x" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="!" />
+                 </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/" />
+                 </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+                 <children>
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" />
+                     <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*" />
+                 </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+             </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+/-" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="0" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="." />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="CE" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="110.0" text="=" />
+                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </GridPane>
