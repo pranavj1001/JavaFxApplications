@@ -25,7 +25,7 @@
             <StackPane prefHeight="97.0" prefWidth="300.0">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7ccd0" height="56.0" stroke="BLACK" strokeType="INSIDE" width="230.0" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="screen" strokeType="OUTSIDE" strokeWidth="0.0" />
                </children>
             </StackPane>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="300.0" spacing="10">
