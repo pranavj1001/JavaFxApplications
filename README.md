@@ -19,7 +19,9 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
 * **Calculator Application** - This application works as a smart calculator with a clean UI. It has various advanced features and more are will be there shortly. Besides the regular Addition, Subtraction, Division and Multiplication, this application can also calculate Percentage, SquareRoot, Square, Factorial, Inverse and it supports decimal point calculation. More features like N raised to a number, Solving Quadratic equations, Linear Equations, etc will be coming soon. (WIP)
 
+##License
 
+MIT License
 
 Acronym used
 
