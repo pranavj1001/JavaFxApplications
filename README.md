@@ -22,7 +22,3 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 ##License
 
 MIT License
-
-Acronym used
-
-WIP --> Work in Progress
