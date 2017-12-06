@@ -9,7 +9,7 @@ This repository contains some of the JavaFx applications which I built using **I
 
 Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
-##Contents
+## Contents
 
 * **Student Management Application** - This application simply helps to add all the details of students in a format. After entering the data, the user can save the data. The application will save the data in the form of a text file.
 
@@ -19,6 +19,6 @@ Note: I've used Lambda Expressions here (ie Java 1.8 is required).
 
 * **Calculator Application** - This application works as a smart calculator with a clean UI. It has various advanced features and more are will be there shortly. Besides the regular Addition, Subtraction, Division and Multiplication, this application can also calculate Percentage, SquareRoot, Square, Factorial, Inverse and it supports decimal point calculation. More features like N raised to a number, Solving Quadratic equations, Linear Equations, etc will be coming soon. (WIP)
 
-##License
+## License
 
 MIT License
